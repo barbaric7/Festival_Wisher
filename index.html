@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Festival Wisher</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    </head>
+
+    <body>
+        <nav class="navbar">
+            <div class="nav-brand">
+                <i class="fas fa-gift"></i>
+                <span>Festival Wisher</span>
+            </div>
+            <div class="nav-links">
+                <a href="#" class="active">Home</a>
+                <a href="#about">About</a>
+            </div>
+        </nav>
+
+        <div class="hero-section">
+            <div class="festival-card">
+                <h1><i class="fas fa-star"></i> Festival Wishes <i class="fas fa-star"></i></h1>
+                <p class="subtitle">Share joy and happiness with your loved ones</p>
+
+                <div class="form-group">
+                    <label for="festivalSelect">
+                        <i class="fas fa-calendar-alt"></i> Select Festival
+                    </label>
+                    <select id="festivalSelect" class="custom-select">
+                        <option value="">--Select Festival--</option>
+                        <option value="Diwali">Diwali</option>
+                        <option value="New Year">New Year</option>
+                        <option value="Sankrant">Sankrant</option>
+                        <option value="Gudi Padwa">Gudi Padwa</option>
+                        <option value="Ganesh Chaturthi">Ganesh Chaturthi</option>
+                        <option value="Christmas">Christmas</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="languageSelect">
+                        <i class="fas fa-language"></i> Select Language
+                    </label>
+                    <select id="languageSelect" class="custom-select">
+                        <option value="">--Select Language--</option>
+                        <option value="Marathi">Marathi</option>
+                        <option value="Hindi">Hindi</option>
+                        <option value="English">English</option>
+                    </select>
+                </div>
+
+                <button onclick="goToWishes()" class="primary-button">
+                    <i class="fas fa-paper-plane"></i> Get Wishes
+                </button>
+            </div>
+        </div>
+
+        <div id="about" class="about-section">
+            <h2>About Festival Wisher</h2>
+            <p>Share the joy of festivals with your loved ones using our carefully crafted wishes in multiple languages.
+            </p>
+            <div class="features">
+                <div class="feature">
+                    <i class="fas fa-globe"></i>
+                    <h3>Multiple Languages</h3>
+                    <p>Choose from Marathi, Hindi, and English</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-share-alt"></i>
+                    <h3>Easy Sharing</h3>
+                    <p>Share wishes directly on WhatsApp</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-edit"></i>
+                    <h3>Customizable</h3>
+                    <p>Personalize wishes to make them special</p>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 Festival Wisher. Spread joy and happiness.</p>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+
+</html>
